@@ -1,0 +1,20 @@
+.container{
+    padding-right: 0;
+    padding-left: 0;
+
+    &-fluid{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.row, .row > * {
+    padding-left:0;
+    padding-right: 0;
+    margin-left:0;
+    margin-right: 0;
+}
+
+html {
+      scroll-padding-top: 50px;
+  }

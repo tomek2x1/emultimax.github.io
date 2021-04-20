@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' /> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-tool.png" />
+    <title>Strona Emultimax</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="top-bar__first-column">
+                            Zadzwoń do nas:
+                            <a href="tel:0048845359000" title="Kontakt" class="top-bar__link">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                (84) 535 90 00</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <ul class="d-flex justify-content-end top-bar__second-column">
+                            <li class="top-bar__item">
+                                <a href="#" title="Sklepy stacjonarne" class="top-bar__link">Sklepy stacjonarne</a>
+                            </li>
+                            <li class="top-bar__item">
+                                <a href="#" title="Blog" class="top-bar__link">Blog</a>
+                            </li>
+                            <li class="top-bar__item">
+                                <a href="#" title="Porównaj" class="top-bar__link">Porównaj</a>
+                            </li>
+                            <li class="top-bar__item">
+                                <a href="#" title="Ulubione" class="top-bar__link">Ulubione</a>
+                            </li>
+                            <li class="top-bar__item">
+                                <a href="#" title="Moje konto" class="top-bar__link">Moje konto</a>
+                            </li>
+                            <li class="top-bar__item">
+                                <a href="#" title="Zarejestruj" class="top-bar__link">Zarejestruj</a>
+                            </li>
+                            <li class="top-bar__item">
+                                <a href="#" title="Zaloguj" class="top-bar__link">Zaloguj</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="middle-bar" class="middle-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="#" class="top-bar__link">
+                            <img src="img/emultimax-logo.png" alt="Emultimax Logo" title="Emultimax" />
+                        </a>
+                    </div>
+                    <div class="col-md-7 d-flex align-items-center">
+                        <form action="" class="search">
+                            <input type="text" class="search__input" />
+                            <button class="search__button">Szukaj</button>
+                        </form>
+                    </div>
+                    <div class="col-md-2 mini-basket">
+                        <a href="#" id="basketButton" class="mini-basket__button">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>Koszyk
+                            (0)
+                        </a>
+                        <div class="container mini-basket__list" id="miniBasket">
+                            <ul class="mini-basket__items-list">
+                                <li class="d-flex mini-basket__item">
+                                    <img src="img/products/porto.jpg"
+                                        title="Kominek elektryczny Porto narożny z wkładem Dimplex XHD Optiflame LED - 3 warianty kolorystyczne"
+                                        alt="Kominek elektryczny Porto narożny z wkładem Dimplex XHD Optiflame LED - 3 warianty kolorystyczne"
+                                        class="mini-basket__item-image" />
+                                    <div class="mini-basket__data d-flex flex-column justify-content-between">
+                                        <p class="mini-basket__item-name">
+                                            Kominek elektryczny Porto narożny z wkładem Dimplex XHD
+                                            Optiflame LED - 3 warianty kolorystyczne
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <a href="#">Dodaj do ulubionych</a>
+                                            <a href="#">Usuń z koszyka</a>
+                                        </div>
+                                    </div>
+                                    <div class="mini-basket__price d-flex flex-column justify-content-between">
+                                        <p class="mini-basket__price-old">449 zł</p>
+                                        <p class="mini-basket__price-new">299 zł</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="mini-basket__go-basket">
+                                Przejdź do koszyka
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Początek do sticky -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <section class="product">
+                        <h1 class="product__title">Dimplex AC 3N</h1>
+                        <p class="product__index">
+                            Kod produktu: <span class="product__index-value">AC3N</span>
+                        </p>
+                        <!-- Zdjęcie produktu -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="product__main-image-wrapper">
+                                        <a class="product__big-photo" href="#">
+                                            <img id="featured" class="product__main-image" src="img/product/1.jpg"
+                                                alt="Dimplex AC 3N" />
+                                        </a>
+                                    </div>
+                                    <div class="product__slider-wrapper">
+                                        <div id="arrowLeft" class="product__arrow product__arrow--left">
+                                            < </div>
+                                                <div id="productMiniImgs" class="product__mini-images-wrapper">
+                                                    <img class="product__thumbnail product__thumbnail--active"
+                                                        src="img/product/1.jpg" />
+                                                    <img class="product__thumbnail" src="img/product/2.jpg" />
+                                                    <img class="product__thumbnail" src="img/product/3.jpg" />
+                                                    <img class="product__thumbnail" src="img/product/4.jpg" />
+                                                    <img class="product__thumbnail" src="img/product/5.jpg" />
+                                                    <img class="product__thumbnail" src="img/product/6.jpg" />
+                                                    <img class="product__thumbnail" src="img/product/7.jpg" />
+                                                </div>
+                                                <div id="arrowRight" class="product__arrow product__arrow--right">
+                                                    >
+                                                </div>
+                                        </div>
+                                        <div class="product__saveBox">
+                                            <a href="#">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i><span>Do
+                                                    ulubionych</span>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-compress" aria-hidden="true"></i><span>Porównaj</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-6 collection">
+                                        <h2 class="collection__title">W kolekcji</h2>
+                                        <ul class="collection__list">
+                                            <li class="collection__item">
+                                                <input type="checkbox" class="collection__checkbox">
+                                                <div class="collection__wrapper">
+                                                    <img src="img/product/2.jpg" alt="" class="collection__image">
+                                                </div>
+                                                <div>
+                                                    <a href="#">Gogle Sony Playstation VR</a>
+                                                    <div class="collection__price">
+                                                        Cena: <b>3 223,13 zł</b>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                    </section>
+
+                    <div id="tabs">
+                        <div class="container">
+                            <div class="row">
+                                <div class="tabs">
+                                    <ul class="nav nav-tabs">
+                                        <li class="nav-item">
+                                            <a class="nav-link tab-link active" aria-current="page"
+                                                href="#productDescription">Opis</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tab-link" href="#specification">Specyfikacja</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tab-link" href="#forDownload">Do pobrania</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tab-link" href="#mp-blog">Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link tab-link" href="#relatedProducts">Produkty powiązane</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section id="productDescription" class="productDescription">
+                        <div class="container">
+                            <div class="productDescription__header">
+                                <h2 class="productDescription__title">Opis:</h2>
+                            </div>
+                            <div class="row">
+                                <article class="productDescription__longdescription longdescription">
+                                    <section>
+                                        <p>
+                                            Kurtyna powietrzna Dimplex AC 3N o szerokości 60,5 cm z
+                                            nagrzewnicą elektryczną to urządzenie, które tworzy
+                                            skuteczną barierę przed wychłodzeniem pomieszczenia oraz
+                                            przed owadami, kurzem i dymem, przy wejściach do 2,3 m
+                                            wysokości. Model ten przeznaczony jest dla drzwi
+                                            podwójnych oraz otworów o nietypowej szerokości.
+                                        </p>
+                                        <p>
+                                            Kurtyna pozwala w ten sposób zredukować koszty energii,
+                                            a tym samym zwiększyć zysk z prowadzonej działalności.
+                                            Jej działanie doceniane jest zwłaszcza w obiektach, o
+                                            zwiększonym natężeniu ruchu, np.:
+                                        </p>
+                                        <ul>
+                                            <li>sklepach,</li>
+                                            <li>biurach,</li>
+                                            <li>okienkach wydawczych,</li>
+                                            <li>oraz innych obiektach użytkowych.</li>
+                                        </ul>
+                                    </section>
+
+                                    <section>
+                                        <h3>Podłączenie kurtyny powietrznej Dimplex AC 3N</h3>
+                                        <p>
+                                            Urządzenie nie posiada przewodu zasilającego. Każda
+                                            kurtyna powietrzna wymaga odpowiedniego przygotowania
+                                            instalacji zasilającej i podłączenia na stałe. Powinien
+                                            wykonać to elektryk z uprawnieniami (zgodnie z
+                                            instrukcją).
+                                        </p>
+                                    </section>
+
+                                    <section>
+                                        <h3>Co wchodzi w skład zestawu?</h3>
+                                        <ul>
+                                            <li>kurtyna powietrzna Dimplex AC 3N,</li>
+                                            <li>regulowany uchwyt montażowy,</li>
+                                            <li>instrukcja obsługi i montażu w języku polskim,</li>
+                                            <li>karta gwarancyjna.</li>
+                                        </ul>
+                                    </section>
+
+                                    <section>
+                                        <h3>Zalety kurtyny powietrznej Dimplex AC 3N</h3>
+                                        <ul class="longdescription__benefits">
+                                            <li>
+                                                <img src="img/tick.svg" />
+                                                <span>2 poziomy mocy grzewczej: 1,5 / 3,0 kW - możliwość
+                                                    wyboru według potrzeb użytkownika, maksymalna
+                                                    prędkość powietrza 6,2 m/s - skuteczna bariera
+                                                    przeciwko niekontrolowanym stratom ciepła,</span>
+                                            </li>
+                                            <li>
+                                                <img src="img/tick.svg" />
+                                                <span>tryb “zimny” - nadmuch powietrza bez zmiany jego
+                                                    temperatury - możliwość zastosowania jako cyrkulacja
+                                                    w sezonie letnim,</span>
+                                            </li>
+                                            <li>
+                                                <img src="img/tick.svg" />
+                                                <span>regulowany uchwyt montażowy w zestawie - pozwala na
+                                                    montowanie urządzenia na suficie lub na ścianie oraz
+                                                    umożliwia optymalne ustawienie kierunku
+                                                    nadmuchiwanego powietrza,</span>
+                                            </li>
+                                            <li>
+                                                <img src="img/tick.svg" />
+                                                <span>nowoczesny panel sterowania - prosty w obsłudze
+                                                    panel z przełącznikami sterującymi pracą
+                                                    urządzenia,</span>
+                                            </li>
+                                            <li>
+                                                <img src="img/tick.svg" />
+                                                <span>malowana proszkowo stalowa obudowa z aluminiowymi
+                                                    nakładkami - gwarancja odporności na korozję oraz
+                                                    atrakcyjnego designu.</span>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="specification" class="specification">
+                        <div class="container">
+                            <div class="specification__header">
+                                <h2 class="specification__title">Specyfikacja:</h2>
+                            </div>
+                            <div class="row">
+                                <div class="specification__table">
+                                    <div class="specification__item">
+                                        <div class="specification__name">producent</div>
+                                        <div class="specification__value">Dimplex</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">model</div>
+                                        <div class="specification__value">AC3N</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">rodzaj nagrzewnicy</div>
+                                        <div class="specification__value">elektryczna</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">maks. moc grzewcza</div>
+                                        <div class="specification__value">3 kW</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">
+                                            poziomy mocy grzewczej
+                                        </div>
+                                        <div class="specification__value">1,5 / 3 kW</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">zasilanie</div>
+                                        <div class="specification__value">230 V</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">
+                                            maks. predkość powietrza
+                                        </div>
+                                        <div class="specification__value">6,2 m/s</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">
+                                            maks. przepływ powietrza
+                                        </div>
+                                        <div class="specification__value">212 m3/h</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">
+                                            maks. wysokość montażu
+                                        </div>
+                                        <div class="specification__value">sposób montażu</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">sterowanie</div>
+                                        <div class="specification__value">
+                                            wbudowany panel sterujący
+                                        </div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">
+                                            sposób regulacji temperatury
+                                        </div>
+                                        <div class="specification__value">brak</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">funkcje dodatkowe</div>
+                                        <div class="specification__value">tryb zimny</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">czujnik drzwiowy</div>
+                                        <div class="specification__value">nie</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">uchwyt montażowy</div>
+                                        <div class="specification__value">
+                                            w zestawie (ścienny/sufitowy)
+                                        </div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">
+                                            maks. poziom głośności
+                                        </div>
+                                        <div class="specification__value">50,5 dB</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">wysokość</div>
+                                        <div class="specification__value">21,4 cm</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">szerokość</div>
+                                        <div class="specification__value">60,5 cm</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">głębokość</div>
+                                        <div class="specification__value">13,5 cm</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">waga</div>
+                                        <div class="specification__value">5,1 kg</div>
+                                    </div>
+                                    <div class="specification__item">
+                                        <div class="specification__name">gwarancja</div>
+                                        <div class="specification__value">36 miesięcy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="forDownload" class="forDownload">
+                        <div class="container">
+                            <div class="row">
+                                <div class="forDownload__header">
+                                    <h2 class="forDownload__title">Do pobrania:</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="forDownload__wrapper">
+                                    <ul class="forDownload__list">
+                                        <li class="forDownload__item">
+                                            <img src="img/filetype_pdf.png" alt="" class="forDownload__icon" />
+                                            <a href="https://www.emultimax.pl/instrukcje/Kurtyny/Instrukcja_kurtyny%20Dimplex_%20AC.pdf"
+                                                target="_blank" class="forDownload__name">Instrukcja obsługi i montażu
+                                                kurtyny powietrznej
+                                                Dimplex AC</a>
+                                        </li>
+                                        <li class="forDownload__item">
+                                            <img src="img/filetype_pdf.png" alt="" class="forDownload__icon" />
+                                            <a href="https://www.emultimax.pl/instrukcje/Kurtyny/Katalog%20-%20Kurtyny%20Powietrzne%20Dimplex.pdf"
+                                                target="_blank" class="forDownload__name">Karta katalogowa</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Blog  mp - main page -->
+                    <section id="mp-blog" class="mp-blog container">
+                        <div class="row">
+                            <div class="mp-blog__header">
+                                <h2 class="mp-blog__title">Blog:</h2>
+                                <div class="mp-blog__more">
+                                    <a class="mp-blog__link" href="#">Przejdź do bloga ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <article class="col-md-4 mp-article">
+                                <a href="#" class="mp-article__image-wrapper">
+                                    <img src="img/blog/blog-1.jpg" class="mp-article__image" />
+                                </a>
+                                <div class="mp-article__description">
+                                    <a href="#" class="mp-article__title">Jak dobrać elektryczne ogrzewanie
+                                        podłogowe?</a>
+                                    <p class="mp-article__content">
+                                        W jaki sposób dobrać wielkość maty do powierzchni
+                                        pomieszczenia? Jak prawidłowo układać matę grzewczą w
+                                        pomieszczeniu oraz dokonywać jej obróbki? Zobacz, jak
+                                        wygląda proces doboru maty oraz jej przykładowe
+                                        konfiguracje układania na podłożu.
+                                    </p>
+                                    <a href="#" class="mp-article__see-more">Czytaj więciej</a>
+                                </div>
+                            </article>
+                            <article class="col-md-4 mp-article">
+                                <a href="#" class="mp-article__image-wrapper">
+                                    <img src="img/blog/blog-2.jpg" class="mp-article__image" />
+                                </a>
+                                <div class="mp-article__description">
+                                    <a href="#" class="mp-article__title">Klimatyzator przenośny, czy SPLIT?</a>
+                                    <p class="mp-article__content">
+                                        Szukasz klimatyzatora do swojego domu/mieszkania?
+                                        Zastanawiasz się, jaki typ będzie odpowiedni do Twojego
+                                        wnętrza- klimatyzator przenośny, czy SPLIT? Zapraszamy do
+                                        zapoznania się z artykułem, w którym rozwiewamy wszelkie
+                                        wątpliwości!
+                                    </p>
+                                    <a href="#" class="mp-article__see-more">Czytaj więciej</a>
+                                </div>
+                            </article>
+                            <article class="col-md-4 mp-article">
+                                <a href="#" class="mp-article__image-wrapper">
+                                    <img src="img/blog/blog-3.jpg" class="mp-article__image" />
+                                </a>
+                                <div class="mp-article__description">
+                                    <a href="#" class="mp-article__title">Oczyszczacz powietrza do gabinetu lekarskiego
+                                        - jaki
+                                        wybrać?</a>
+                                    <p class="mp-article__content">
+                                        W obecnej sytuacji, związanej z rozprzestrzenianiem się
+                                        koronawirusa, wiele firm decyduje się na zakup
+                                        oczyszczacza powietrza. Czy słusznie, jaki wybrać?
+                                        Zapraszamy do dalszej części artykułu.
+                                    </p>
+                                    <a href="#" class="mp-article__see-more">Czytaj więciej</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Slider produktów -->
+                    <section id="relatedProducts" class="products-slider container">
+                        <div class="row">
+                            <div class="products-slider__header">
+                                <h2 class="products-slider__title">Produkty powiązane:</h2>
+                                <div class="products-slider__more">
+                                    <a class="products-slider__link" href="#">Zobacz wszystkie ></a>
+                                </div>
+                            </div>
+                            <div class="productSlider">
+                                <div class="products-slider__slide">
+                                    <a href="#" title="Zobacz produkt">
+                                        <div class="products-slider__img-wrapper">
+                                            <img class="products-slider__img" src="img/zestaw.jpg" alt="" />
+                                            <div class="products-slider__bar">
+                                                <div class="products-slider__bar--wrapper">
+                                                    <div class="products-slider__bar--promotion">
+                                                        Promocja
+                                                    </div>
+                                                    <div class="products-slider__bar--outlet">
+                                                        Outlet
+                                                    </div>
+                                                </div>
+                                                <a class="products-slider__favorite" href="#"
+                                                    title="Dodaj do ulubionych">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-slider__product-description">
+                                            <a class="products-slider__product-title" href="#" title="Zobacz produkt">
+                                                Warmtec DS2-70/T510
+                                            </a>
+                                            <div>
+                                                <div class="products-slider__prices">
+                                                    <p class="products-slider__price products-slider__price--new">
+                                                        796,00 zł
+                                                    </p>
+                                                    <p class="products-slider__price products-slider__price--old">
+                                                        995,00 zł
+                                                    </p>
+                                                </div>
+                                                <div class="products-slider__basket">
+                                                    <a href="#" class="products-slider__button"><i
+                                                            class="fa fa-shopping-basket products-slider__button-icon"
+                                                            aria-hidden="true"></i>Do koszyka</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-slider__slide">
+                                    <a href="#" title="Zobacz produkt">
+                                        <div class="products-slider__img-wrapper">
+                                            <img class="products-slider__img" src="img/zestaw.jpg" alt="" />
+                                            <div class="products-slider__bar">
+                                                <div class="products-slider__bar--wrapper">
+                                                    <div class="products-slider__bar--promotion">
+                                                        Promocja
+                                                    </div>
+                                                </div>
+                                                <a class="products-slider__favorite" href="#"
+                                                    title="Dodaj do ulubionych">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-slider__product-description">
+                                            <a class="products-slider__product-title" href="#" title="Zobacz produkt">
+                                                Warmtec DS2-70/T510
+                                            </a>
+                                            <div>
+                                                <div class="products-slider__prices">
+                                                    <p class="products-slider__price products-slider__price--new">
+                                                        796,00 zł
+                                                    </p>
+                                                    <p class="products-slider__price products-slider__price--old">
+                                                        995,00 zł
+                                                    </p>
+                                                </div>
+                                                <div class="products-slider__basket">
+                                                    <a href="#" class="products-slider__button"><i
+                                                            class="fa fa-shopping-basket products-slider__button-icon"
+                                                            aria-hidden="true"></i>Do koszyka</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-slider__slide">
+                                    <a href="#" title="Zobacz produkt">
+                                        <div class="products-slider__img-wrapper">
+                                            <img class="products-slider__img" src="img/zestaw.jpg" alt="" />
+                                            <div class="products-slider__bar">
+                                                <div class="products-slider__bar--wrapper">
+                                                    <div class="products-slider__bar--outlet">
+                                                        Outlet
+                                                    </div>
+                                                </div>
+                                                <a class="products-slider__favorite" href="#"
+                                                    title="Dodaj do ulubionych">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-slider__product-description">
+                                            <a class="products-slider__product-title" href="#" title="Zobacz produkt">
+                                                Warmtec DS2-70/T510
+                                            </a>
+                                            <div>
+                                                <div class="products-slider__prices">
+                                                    <p class="products-slider__price products-slider__price--new">
+                                                        796,00 zł
+                                                    </p>
+                                                    <p class="products-slider__price products-slider__price--old">
+                                                        995,00 zł
+                                                    </p>
+                                                </div>
+                                                <div class="products-slider__basket">
+                                                    <a href="#" class="products-slider__button"><i
+                                                            class="fa fa-shopping-basket products-slider__button-icon"
+                                                            aria-hidden="true"></i>Do koszyka</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-slider__slide">
+                                    <a href="#" title="Zobacz produkt">
+                                        <div class="products-slider__img-wrapper">
+                                            <img class="products-slider__img" src="img/zestaw.jpg" alt="" />
+                                            <div class="products-slider__bar">
+                                                <div class="products-slider__bar--wrapper"></div>
+                                                <a class="products-slider__favorite" href="#"
+                                                    title="Dodaj do ulubionych">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-slider__product-description">
+                                            <a class="products-slider__product-title" href="#" title="Zobacz produkt">
+                                                Warmtec DS2-70/T510
+                                            </a>
+                                            <div>
+                                                <div class="products-slider__prices">
+                                                    <p class="products-slider__price products-slider__price--new">
+                                                        796,00 zł
+                                                    </p>
+                                                    <p class="products-slider__price products-slider__price--old">
+                                                        995,00 zł
+                                                    </p>
+                                                </div>
+                                                <div class="products-slider__basket">
+                                                    <a href="#" class="products-slider__button"><i
+                                                            class="fa fa-shopping-basket products-slider__button-icon"
+                                                            aria-hidden="true"></i>Do koszyka</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-slider__slide">
+                                    <a href="#" title="Zobacz produkt">
+                                        <div class="products-slider__img-wrapper">
+                                            <img class="products-slider__img" src="img/zestaw.jpg" alt="" />
+                                            <div class="products-slider__bar">
+                                                <div class="products-slider__bar--wrapper">
+                                                    <div class="products-slider__bar--promotion">
+                                                        Promocja
+                                                    </div>
+                                                    <div class="products-slider__bar--outlet">
+                                                        Outlet
+                                                    </div>
+                                                </div>
+                                                <a class="products-slider__favorite" href="#"
+                                                    title="Dodaj do ulubionych">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-slider__product-description">
+                                            <a class="products-slider__product-title" href="#" title="Zobacz produkt">
+                                                Warmtec DS2-70/T510
+                                            </a>
+                                            <div>
+                                                <div class="products-slider__prices">
+                                                    <p class="products-slider__price products-slider__price--new">
+                                                        796,00 zł
+                                                    </p>
+                                                    <p class="products-slider__price products-slider__price--old">
+                                                        995,00 zł
+                                                    </p>
+                                                </div>
+                                                <div class="products-slider__basket">
+                                                    <a href="#" class="products-slider__button"><i
+                                                            class="fa fa-shopping-basket products-slider__button-icon"
+                                                            aria-hidden="true"></i>Do koszyka</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="products-slider__slide">
+                                    <a href="#" title="Zobacz produkt">
+                                        <div class="products-slider__img-wrapper">
+                                            <img class="products-slider__img" src="img/zestaw.jpg" alt="" />
+                                            <div class="products-slider__bar">
+                                                <div class="products-slider__bar--wrapper">
+                                                    <div class="products-slider__bar--outlet">
+                                                        Outlet
+                                                    </div>
+                                                </div>
+                                                <a class="products-slider__favorite" href="#"
+                                                    title="Dodaj do ulubionych">
+                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="products-slider__product-description">
+                                            <a class="products-slider__product-title" href="#" title="Zobacz produkt">
+                                                Warmtec DS2-70/T510
+                                            </a>
+                                            <div>
+                                                <div class="products-slider__prices">
+                                                    <p class="products-slider__price products-slider__price--new">
+                                                        796,00 zł
+                                                    </p>
+                                                    <p class="products-slider__price products-slider__price--old">
+                                                        995,00 zł
+                                                    </p>
+                                                </div>
+                                                <div class="products-slider__basket">
+                                                    <a href="#" class="products-slider__button"><i
+                                                            class="fa fa-shopping-basket products-slider__button-icon"
+                                                            aria-hidden="true"></i>Do koszyka</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Koniec pierwszego blocku -->
+                </div>
+                <div class="col-md-3">
+                    <div class="productData">
+                        <div class="productData__prices">
+                            <p class="productData__oldPrice">794,58 zł</p>
+                            <p class="productData__price">710,00 zł/szt.</p>
+                        </div>
+                        <div class="productData__options">
+                            <div class="productData__options-row productData__availability">
+                                <img src="img/product/graph_1_4.png" alt="" /> Dostępny!
+                            </div>
+                            <div class="productData__options-row productData__tooltip" data-bs-toggle="tooltip"
+                                data-bs-html="true"
+                                title="Wszystkie zamówienia * <br/> złożone przed godziną 15-tą, wysyłamy tego samego dnia. Zamówienia powyżej 79 zł wysłane są na nasz koszt. <br/>* - przesyłki paletowe zamówione do godziny 10">
+                                <i class="fa fa-truck" aria-hidden="true"></i>Możemy wysłać
+                                już dzisiaj!
+                            </div>
+                            <a class="productData__options-row" href="#"><i class="fa fa-map-marker"
+                                    aria-hidden="true"></i> Sprawdź,
+                                w którym sklepie obejrzysz i kupisz od ręki</a>
+
+                            <div class="productData__options-row productData__tooltip" data-bs-toggle="tooltip"
+                                data-bs-html="true"
+                                title="Możliwość zwrotu w ciągu 10 dni od zakupu bez podania przyczyny">
+                                <i class="fa fa-undo" aria-hidden="true"></i>Łatwy zwrot
+                                towaru
+                            </div>
+                        </div>
+                        <div class="productData__quantity">
+                            <p class="productData__quantity-text">Ilosć (szt.):</p>
+                            <div>
+                                <button id="removeOneFromQuantity" class="productData__btn">
+                                    -
+                                </button>
+                                <input type="number" min="1" value="1" id="productQuantity"
+                                    class="productData__input" />
+                                <button id="addOneToQuantity" class="productData__btn">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <button class="productData__addToBasket">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i> Dodaj
+                            do koszyka
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Koniec do sticky -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 align-items-center">
+                    <div class="contact__border">
+                        <div class="contact__wrapper">
+                            <h3 class="contact__title">Zapraszamy do kontaktu</h3>
+                            <div class="contact">
+                                <div class="contact__image-wrapper">
+                                    <img class="contact__image" src="img/footer/hotline_icon.svg"
+                                        alt="Biuro Obsługi Klienta Emultimax" />
+                                </div>
+                                <div class="contact__description">
+                                    <p class="contact__department">Biuro Obsługi Klienta</p>
+                                    <h2 class="contact__number">
+                                        <a href="tel:845359000" title="Zadzwoń do nas" class="contact__link">(84) 535 90
+                                            00</a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <ul class="row ms-3 footer__list">
+                        <li class="col-md-3">
+                            <span>PRODUKTY</span>
+                            <ul>
+                                <li><a href="#">Promocje</a></li>
+                                <li><a href="#">Nowe produkty</a></li>
+                                <li><a href="#">Najczęściej kupowane</a></li>
+                                <li><a href="#">Ogrzewanie podłogowe</a></li>
+                                <li><a href="#">Oczyszczacze powietrza</a></li>
+                                <li><a href="#">Klimatyzatory</a></li>
+                                <li><a href="#">Kominki elektryczne</a></li>
+                                <li><a href="#">Oferta Uzupełniająca</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3">
+                            <span>DOWIEDZ SIĘ WIĘCEJ</span>
+                            <ul>
+                                <li><a href="#">Zmiana nabywcy na fakturze</a></li>
+                                <li><a href="#">Instrukcje</a></li>
+                                <li>
+                                    <a href="#">Zużyty sprzęt elektryczny i elektroniczny</a>
+                                </li>
+                                <li><a href="#">TaxFree</a></li>
+                                <li><a href="#">Porady techniczne</a></li>
+                                <li><a href="#">Usługi</a></li>
+                                <li><a href="#">Serwis</a></li>
+                                <li><a href="#">Certyfikaty i Referencje</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3">
+                            <span>NASZA FIRMA</span>
+
+                            <ul>
+                                <li><a href="#">Masz pytania</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="#">Sklepy stacjonarne</a></li>
+                                <li><a href="#">Dlaczego my</a></li>
+                                <li><a href="#">Kariera</a></li>
+                                <li><a href="#">Oczyszczacze powietrza</a></li>
+                                <li><a href="#">Odstąpienie od umowy</a></li>
+                                <li><a href="#">Polityka prywatności</a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-3">
+                            <span>TWOJE KONTO</span>
+                            <ul>
+                                <li><a href="#">Zarejestruj się</a></li>
+                                <li><a href="#">Koszyk</a></li>
+                                <li><a href="#">Lista zakupowa</a></li>
+                                <li><a href="#">Lista zakupionych produktów</a></li>
+                                <li><a href="#">Historia transakcji</a></li>
+                                <li><a href="#">Moje rabaty</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jQuery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

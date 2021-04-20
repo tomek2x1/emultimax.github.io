@@ -1,0 +1,46 @@
+.forDownload{
+    margin-top:30px;
+    font-family: $main-font;
+    padding-bottom:30px;
+    margin-bottom:30px;
+
+    &__header{
+        display: flex;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-bottom:3px;
+        border-bottom:2px solid $secondary-color;
+        margin-bottom:10px;
+        font-weight:700;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-top:10px;
+    }
+
+    &__icon{
+        margin-right:10px;
+    }
+
+    &__name{
+        text-decoration: underline;
+        color: $third-color;
+        font-size:18px;
+        transition: color .25s;
+
+        &:hover{
+            color: $primary-color;
+        }
+
+    }
+}

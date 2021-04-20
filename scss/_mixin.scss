@@ -1,0 +1,9 @@
+@mixin container-xxl {
+    max-width:$width-xxl;
+    margin:0 auto;
+}
+
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}

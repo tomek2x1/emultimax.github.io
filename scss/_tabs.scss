@@ -1,0 +1,27 @@
+
+#tabs{
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    background:$sixth-color;
+}
+
+.tabs{
+    font-family: $main-font;
+    font-size:20px;
+    border-bottom:2px solid $secondary-color;
+
+    .nav-link{
+        border:none;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        color:$third-color;
+        margin-bottom:-3px;
+        
+
+        &.active{
+            border-bottom:2px solid $primary-color;
+            color:$primary-color;
+        }
+    }
+}

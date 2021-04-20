@@ -1,0 +1,48 @@
+.specification{
+    font-family: $main-font;
+    padding-bottom:10px;
+
+    &__header{
+        display: flex;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-bottom:3px;
+        border-bottom:2px solid $secondary-color;
+        margin-bottom:10px;
+        font-weight:700;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom:1px solid darken($secondary-color, 5%);
+
+        &:first-child{
+            border-top:1px solid darken($secondary-color, 5%);
+        }
+
+        &:nth-child(odd){
+            background-color:$secondary-color;
+        }
+
+        &:hover{
+            background-color:darken($secondary-color, 4%);
+        }
+    }
+
+    &__name{
+        text-align: right;
+        flex-basis: 50%;
+        padding:10px 20px
+    }
+    
+    &__value{
+        text-align: left;
+        flex-basis: 50%;
+        padding:10px 20px
+    }
+}
