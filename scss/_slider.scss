@@ -3,6 +3,34 @@
   background-color: $primary-color;
 }
 
+.carousel{
+  .carousel-control-prev{
+    width:0;
+    height:40px;
+    top:50%;
+    left:30px;
+    transform: translate(-50%,-50%);
+  }
+
+  .carousel-control-next{
+    width:0;
+    height:40px;
+    top:50%;
+    right:30px;
+    transform: translate(-50%,-50%);
+  }
+
+  &:hover{
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+      padding:30px;
+      background-color: rgba(0,0,0,0.8);
+      background-size: 30px;
+      border-radius:5px;
+    }
+
+  }
+}
+
 .carousel-control-prev{
   transition:all .25s;
   opacity: 1;
@@ -25,4 +53,5 @@
       opacity: 1;
     }
   }
+ 
 }

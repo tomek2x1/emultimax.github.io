@@ -1,8 +1,8 @@
-// // Slider
-// var myCarousel = document.querySelector('#mainSlider')
-// var carousel = new bootstrap.Carousel(myCarousel, {
-//   interval: 5000,
-// });
+// Slider
+var myCarousel = document.querySelector('#mainSlider')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 5000,
+});
 
 // Pokaż zawartośc koszyka
 const basketButton = document.getElementById("basketButton");
@@ -58,7 +58,7 @@ removeOneFromQuantity.addEventListener("click", () => {
 // Slider produktów na karcie produktów 
 const thumbnails = document.querySelectorAll(".product__thumbnail");
 const productMainImage = document.getElementById("featured");
-let mainImageSrc = 
+let mainImageSrc = "";
 
 thumbnails.forEach(thumbnail => {
   thumbnail.addEventListener('mouseover', function(){

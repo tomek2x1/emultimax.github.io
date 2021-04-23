@@ -86,6 +86,14 @@ html {
   scroll-padding-top: 50px;
 }
 
+#mainContent {
+  margin-top: -600px;
+}
+
+a {
+  cursor: pointer;
+}
+
 header {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -284,48 +292,183 @@ header .middle-bar .mini-basket__go-basket:hover {
   color: #fff;
 }
 
-.menu-horizontal {
-  -webkit-box-shadow: inset 0 -2px 0 0 #e0e0e0;
-          box-shadow: inset 0 -2px 0 0 #e0e0e0;
-}
-
-.menu-horizontal .top-bar__wrapper {
-  padding: 0;
-}
-
-.menu-horizontal__list {
+.horizontalMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  z-index: 2999;
+}
+
+.horizontalMenu__item {
+  padding: 10px 20px;
+}
+
+.horizontalMenu__link {
+  font-weight: 600;
   font-size: 18px;
-  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.horizontalMenu__link:hover {
+  color: #f29400;
+}
+
+.horizontalMenu a {
+  color: #000;
+}
+
+.veritcalMenu {
+  position: relative;
+  border: 1px solid #eef1f3;
+  margin-top: 10px;
+}
+
+.veritcalMenu__item {
+  width: 300px;
+  border-bottom: 1px solid #eef1f3;
+  border-right: 1px solid #eef1f3;
+  border-left: 2px solid transparent;
+}
+
+.veritcalMenu__item .subMenu {
+  display: none;
+}
+
+.veritcalMenu__item:hover {
+  border-left-color: #f29400;
+}
+
+.veritcalMenu__item:hover .veritcalMenu__link {
+  background: #eef1f3;
+}
+
+.veritcalMenu__item:hover .subMenu {
+  display: block;
+}
+
+.veritcalMenu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 15px;
+  padding: 8px;
+}
+
+.subMenu {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  width: 1020px;
+  padding: 20px;
+  background: #fff;
+  z-index: 2999;
+  border: 1px solid #eef1f3;
+  height: 100%;
+}
+
+.subMenu__wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.subMenu__image {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.subMenu__list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.subMenu__item {
+  margin-top: 10px;
+}
+
+.subMenu__link {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 5px;
   margin: 0 auto;
 }
 
-.menu-horizontal__link {
-  display: block;
-  padding: 15px 15px;
-  color: #333;
-  white-space: nowrap;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.subMenu__link:hover {
+  text-decoration: underline;
 }
 
-.menu-horizontal__link:hover {
-  border-bottom-color: #f29400;
-  color: #f29400;
+.subMenu__ad {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subMenu__ad-img {
+  display: block;
+  width: 100%;
+}
+
+.subMenu2__list {
+  margin-top: 10px;
+}
+
+.subMenu2__item {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.subMenu2__link:hover {
+  text-decoration: underline;
 }
 
 .carousel-indicators [data-bs-target] {
   background-color: #f29400;
+}
+
+.carousel .carousel-control-prev {
+  width: 0;
+  height: 40px;
+  top: 50%;
+  left: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel .carousel-control-next {
+  width: 0;
+  height: 40px;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel:hover .carousel-control-prev-icon, .carousel:hover .carousel-control-next-icon {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: 30px;
+  border-radius: 5px;
 }
 
 .carousel-control-prev {
@@ -828,6 +971,7 @@ header .middle-bar .mini-basket__go-basket:hover {
 .products-slider__bar--wrapper {
   text-align: center;
   color: #fff;
+  font-size: 12px;
 }
 
 .products-slider__bar--promotion {
@@ -842,7 +986,7 @@ header .middle-bar .mini-basket__go-basket:hover {
 }
 
 .products-slider__favorite {
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
   color: #333;

@@ -81,6 +81,7 @@
         &--wrapper{
             text-align: center;
             color:$sixth-color;
+            font-size:12px;
         }
 
         &--promotion{
@@ -96,7 +97,7 @@
     }
 
     &__favorite{
-        font-size:25px;
+        font-size:20px;
         cursor:pointer;
         border-radius:50%;
         color:$third-color;
