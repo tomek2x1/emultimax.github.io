@@ -376,6 +376,16 @@ header .middle-bar .mini-basket__go-basket:hover {
   height: 100%;
 }
 
+.subMenu__item {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+
+.subMenu__item:hover {
+  border-color: #d0d8de;
+}
+
 .subMenu__wrapper {
   height: 100%;
   position: relative;
@@ -398,10 +408,6 @@ header .middle-bar .mini-basket__go-basket:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.subMenu__item {
-  margin-top: 10px;
 }
 
 .subMenu__link {
@@ -929,13 +935,23 @@ header .middle-bar .mini-basket__go-basket:hover {
 }
 
 .products-slider__slide {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 30px;
+  border: 1px solid transparent;
+}
+
+.products-slider__slide:hover {
+  border-color: #eef1f3;
 }
 
 .products-slider__slide:hover .products-slider__img {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.products-slider__slide:hover .products-slider__button2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .products-slider__img-wrapper {
@@ -1025,7 +1041,7 @@ header .middle-bar .mini-basket__go-basket:hover {
 }
 
 .products-slider__price--new {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
 }
 
@@ -1061,6 +1077,61 @@ header .middle-bar .mini-basket__go-basket:hover {
 
 .products-slider__button-icon {
   margin-right: 10px;
+}
+
+.products-slider__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  margin-top: 10px;
+}
+
+.products-slider__prices2--old {
+  text-decoration: line-through;
+  color: #c1ccd3;
+}
+
+.products-slider__prices2--new {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.products-slider__button2 {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 1px solid #eef1f3;
+  color: #f29400;
+  border-radius: 50%;
+}
+
+.products-slider__button2:hover {
+  border-color: #fff;
+  color: #fff;
+  background: #f29400;
+}
+
+.products-slider__button2 span {
+  display: inline-block;
+}
+
+.products-slider__button2-icon {
+  font-size: 18px;
 }
 
 .mp-blog {

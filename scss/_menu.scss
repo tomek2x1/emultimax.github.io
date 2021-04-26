@@ -73,6 +73,16 @@
     border:1px solid $secondary-color;
     height: 100%;
 
+    &__item{
+        cursor:pointer;
+        border:1px solid transparent;
+        padding:5px;
+
+        &:hover{
+                border-color:darken($secondary-color, 10%);
+        }
+    }
+
     &__wrapper{
         height:100%;
         position:relative;
@@ -94,9 +104,7 @@
         flex-wrap: wrap;
     }
 
-    &__item{
-        margin-top:10px;
-    }
+
 
     &__link{
         display: inline-block;
