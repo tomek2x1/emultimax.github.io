@@ -3,38 +3,75 @@
     align-items:baseline;
     z-index:2999;
 
+    &__product-btn{
+        color:$fifth-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: $menuWidth;
+        border:2px solid $primary-color;
+        text-align:center;
+    }
+
     &__item{
         padding: 10px 20px;
+
+        &:hover{
+            .veritcalMenu{
+                display: block;
+            }
+        }
+
+        &-main{
+            height:30px;
+            line-height: 30px;
+            width:100%;
+
+            &:hover{
+                .veritcalMenu-main{
+                    display: block;
+                    margin-top:1px;
+                }
+            }
+        }
 
     }
 
     &__link{
         font-weight:600;
         font-size:18px;
-        padding: 10px 20px;
-        margin-bottom:20px;
+        color:$fifth-color;
+        display: block;
 
         &:hover{
             color:$primary-color;
         }
     }
-
-    a{
-        color:$fifth-color;
-    }
 }
 
 .veritcalMenu{
+    font-family: $main-font;
     position: relative;
-    border:1px solid $secondary-color;
-    margin-top:10px;
+    background: $sixth-color;
+
+    &-main{
+        font-family: $main-font;
+        position: relative;
+        background: $sixth-color;
+        display: none;
+        padding-top:4px;
+        margin-left:-2px;
+    }
 
     &__item{
-        width:300px;
+        width:$menuWidth;
         border-bottom:1px solid $secondary-color;
         border-right:1px solid $secondary-color;
-        border-left:2px solid transparent;
+        border-left:2px solid $secondary-color;
 
+        &:first-child{
+            border-top:1px solid $secondary-color;
+        }
 
         .subMenu{
             display: none;
@@ -54,18 +91,27 @@
     }
 
     &__link{
+        color:$fifth-color;
+        background: $sixth-color;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         font-size:15px;
         padding:8px;
+        height: 30px;
+        line-height: 30px;
+        align-items: center;
+
+        &:hover{
+            color:$fifth-color;
+        }
     }
 }
 
 .subMenu{
     position: absolute;
     top:0;
-    left:300px;
+    left:$menuWidth;
     width: 1020px;
     padding:20px;
     background: $sixth-color;
@@ -111,15 +157,13 @@
         font-weight:700;
         margin-bottom:5px;
         margin:0 auto;
+        color:$fifth-color;
 
         &:hover{
+            color:$fifth-color;
             text-decoration: underline;
         }
     }
-
-    // &__item:hover .subMenu{
-    //     display: block;      
-    // }
 
     &__ad{
         position:absolute;
@@ -147,7 +191,9 @@
     }
 
     &__link{
+        color:$fifth-color;
         &:hover{
+            color:$fifth-color;
             text-decoration: underline;
         }
     }

@@ -1,0 +1,99 @@
+.custForm{
+
+    &__title{
+        margin-top:30px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        padding-top:20px;
+        padding-bottom:20px;
+        margin:0 auto;
+    }
+
+    &__stars{
+        display: flex;
+        flex-direction: row;
+        color:$primary-color;
+    }
+
+    &__star-radio{
+        display: none;
+    }
+
+    &__star-label{
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    .fa-star{
+        font-size: 20px;
+        color:darken($secondary-color, 10%);
+    }
+
+    &__star-label{
+        font-size: 40px;
+        padding: 2px;
+        float: right;
+        transition: all 0.2s ease;
+      }
+
+    &__star-radio:not(:checked) ~ label:hover,
+    &__star-radio:not(:checked) ~ label:hover ~ label{
+        color: $primary-color;
+    }
+
+    &__star-radio:checked ~ label{
+        color: $primary-color;
+    }
+
+    &__star-radio#rate-5:checked ~ label{
+        color: $primary-color;
+    }
+
+    &__name, &__review{
+        width:100%;
+        margin-top:5px;
+        border:1px solid $secondary-color;
+        padding:5px 10px;
+        outline:none;
+        font-size: 18px;
+
+        &:focus{
+            border-color:$primary-color;
+        }
+    }
+
+    &__review{
+        height:100px;
+    }
+
+    &__label{
+        display: block;
+        width: 100%;
+        font-size:20px;
+        margin-top:10px;
+    }
+
+    &__btn-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top:5px;
+        margin-bottom:20px;
+    }
+
+    &__btn{
+        padding:10px 20px;
+        background: $primary-color;
+        border:none;
+        color:$sixth-color;
+
+        &:hover{
+            background: darken($primary-color, 10%);
+        }
+    }
+}

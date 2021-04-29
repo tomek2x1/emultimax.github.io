@@ -22,66 +22,36 @@ miniBasket.addEventListener("mouseover", showMiniBasket);
 basketButton.addEventListener("mouseleave", hideMiniBasket);
 miniBasket.addEventListener("mouseleave", hideMiniBasket);
 
-// Pokazywanie tooltip 
-const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl);
-})
 
-// Tabs na karcie produktu
-const tabsTriggerList = [...document.querySelectorAll('.tab-link')];
+// Obsługa header przy scrollowaniu
+const topBar = document.getElementById("header");
+const veritcalMenu = document.getElementById("veritcalMenu");
+const productBtn = document.getElementById("horizontalMenu__product-btn");
 
-tabsTriggerList.forEach(tab => {
-    tab.addEventListener("click", function(tab) {
-        tabsTriggerList.forEach(tabOne => tabOne.classList.remove("active"));
-    
-        this.classList.add("active");
-    });
-});
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+// const currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     topBar.style.top = "0";
+//   } else {
+//     topBar.style.top = "-40px";
+//   }
+//   prevScrollpos = currentScrollPos;
 
-// Dodawanie i odejmowanie ilości do zamówienia
-const removeOneFromQuantity = document.getElementById("removeOneFromQuantity");
-const addOneToQuantity = document.getElementById("addOneToQuantity");
-const productQuantity = document.getElementById("productQuantity");
+  // const scroll = window.scrollY;
+  // if(scroll === 0){
+  //   veritcalMenu.style.display = "block";
+  // } else {
+  //   veritcalMenu.style.display = "none";
+  // }
 
-addOneToQuantity.addEventListener("click", () => {
-    productQuantity.value = parseInt(productQuantity.value) + 1;
-});
+// Ukrywanie btn "Produkty" jeżeli scroll jest 0
+  if(scroll === 0){
+    productBtn.style.display = "none";
+  } else {
+    productBtn.style.display = "block";
+  }
+}
 
-removeOneFromQuantity.addEventListener("click", () => {
-    const quantity = parseInt(productQuantity.value);
-    if(quantity > 1){
-        productQuantity.value = parseInt(productQuantity.value) - 1;
-    };
-});
 
-// Slider produktów na karcie produktów 
-const thumbnails = document.querySelectorAll(".product__thumbnail");
-const productMainImage = document.getElementById("featured");
-let mainImageSrc = "";
 
-thumbnails.forEach(thumbnail => {
-  thumbnail.addEventListener('mouseover', function(){
-
-    thumbnails.forEach(activeImage =>{ 
-      if(activeImage.classList.contains('product__thumbnail--active')){
-        activeImage.classList.remove('product__thumbnail--active');
-      }
-    });
-
-    this.classList.add('product__thumbnail--active');
-    productMainImage.src = this.src;
-  });
-});
-
-const arrowLeft = document.getElementById("arrowLeft");
-const arrowRight = document.getElementById("arrowRight");
-const productMiniImgs = document.getElementById("productMiniImgs");
-
-arrowLeft.addEventListener('click', ()=> {
-  productMiniImgs.scrollLeft -= 180;
-})
-
-arrowRight.addEventListener('click', ()=> {
-  productMiniImgs.scrollLeft += 180;
-})

@@ -19,8 +19,16 @@ html {
       scroll-padding-top: 50px;
   }
 
-#mainContent{
-    margin-top: -600px;
+  header{
+    position: sticky;
+    top:0;
+    left:0;
+    background: $sixth-color;
+    z-index:3100;
+}
+
+.middle-bar{
+    position: sticky;
 }
 
 a{

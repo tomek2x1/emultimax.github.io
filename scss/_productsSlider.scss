@@ -76,6 +76,8 @@
         margin: 0 auto;
         transform:scale(0.9);
         transition: transform .25s;
+        width: 200px;
+        height: 200px;
     }
 
     &__bar{

@@ -1,7 +1,7 @@
 .strengths{
+    margin-top:10px;
     font-family: $main-font;
     padding-bottom:10px;
-    border-bottom:1px solid $secondary-color;
 
     &__title{
         display: inline-block;
@@ -34,8 +34,12 @@
         &-content{
             margin:5px;
             background: $secondary-color;
-            padding:20px;
+            padding:20px 10px;
             text-align: center;
+        }
+
+        img{
+            width:50px;
         }
 
         &-paragraph{
