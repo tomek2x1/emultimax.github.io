@@ -13,7 +13,6 @@
 
     .nav-link{
         border:none;
-        text-transform: uppercase;
         padding: 10px 20px;
         color:$third-color;
         margin-bottom:-3px;
@@ -22,6 +21,7 @@
         &.active{
             border-bottom:2px solid $primary-color;
             color:$primary-color;
+            font-weight: 700;
         }
     }
 }

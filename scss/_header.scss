@@ -1,6 +1,7 @@
 header {
     font-family: $main-font;
     transition: top 0.3s;
+    border-bottom: 1px solid $secondary-color;
 
 
     .top-bar{
@@ -38,8 +39,8 @@ header {
     }
 
     .middle-bar{
-        padding-top:10px;
-        padding-bottom: 10px;
+        padding-top:15px;
+        padding-bottom: 15px;
 
         &__item{
             padding-right: 10px;
@@ -51,16 +52,36 @@ header {
             }
         }
 
-        &__link{
-            color:$third-color;
-            transition: color .25s;
-            &:hover{
-                color:$primary-color;
-            }
+        &__links{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 20px;
+        }
 
-            i {
-                margin-left:10px;
+        &__link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:$fifth-color;
+            cursor:pointer;
+
+            &:hover{
+                .middle-bar__name{
+                    color:$primary-color;
+                }
             }
+        }
+
+        &__icon{
+            font-size:25px;
+            margin-bottom:5px;
+            color:$primary-color;
+        }
+
+        &__name{
+            font-size: 18px;
+            font-weight: 700;
         }
 
         .mini-basket{

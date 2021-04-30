@@ -2,7 +2,7 @@
     display: flex;
     flex-grow: 2;
     border:1px solid $secondary-color;
-    border-radius:20px;
+    // border-radius:20px;
     height:45px;
 
     &__input{
@@ -18,8 +18,8 @@
     &__button{
         height:100%;
         width:100px;
-        border-top-right-radius:20px;
-        border-bottom-right-radius:20px;
+        // border-top-right-radius:20px;
+        // border-bottom-right-radius:20px;
         border:none;
         transition: .3s;
         cursor: pointer;
